@@ -1,8 +1,8 @@
 class LeasesController < ApplicationController
 
-  def index
-    render json: Lease.all
-  end
+  # def index
+  #   render json: Lease.all
+  # end
 
   def create
     lease = Lease.create!(lease_params)
